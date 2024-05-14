@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="news-page">
+    <header class="profile-header">
+        <h1>Новости</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="users.html">Пользователи</a></li>
+                <li><a href="announcements.html">Объявления</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Последние новости</h2>
+        <div id="newsList">
+        </div>
+        <form id="addNewsForm" action="add_news.php" method="post">
+            <label for="newsTitle">Заголовок:</label>
+            <input type="text" id="newsTitle" name="title" required>
+            <label for="newsContent">Содержание:</label>
+            <textarea id="newsContent" name="content" required></textarea>
+            <button type="submit">Добавить новость</button>
+        </form>
+        <form action="delete_news.php" method="post">
+            <label for="newsId">ID новости:</label>
+            <input type="text" id="newsId" name="id_news" required>
+            <button type="submit">Удалить новость</button>
+        </form>
+    </main>
+    
+    <script src="TheSmurfs.js"></script>
+</body>
+</html>

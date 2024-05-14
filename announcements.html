@@ -1,0 +1,47 @@
+<php 
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объявления</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="news-page">
+    <header class="profile-header">
+        <h1>Объявления</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="users.html">Пользователи</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Объявления</h2>
+        <div id="announcementsList">
+        </div>
+        <form id="addAnnouncementForm" action="Announcement.php" method="post">
+            <label for="announcementTitle">Название объявления:</label>
+            <input type="text" id="announcementTitle" name="title" required><br>
+            <label for="announcementContent">Содержание объявления:</label>
+            <textarea id="announcementContent" name="content" required></textarea><br>
+            <label for="userId">ID пользователя:</label>
+            <input type="text" id="userId" name="id_user"><br>
+            <button type="submit">Добавить объявление</button>
+        </form>
+        
+        
+        <!-- <form id="deleteAnnouncementForm" action="delete_announcements.php" method="post">
+            <label for="deleteAnnouncementId">ID объявления для удаления:</label>
+            <input type="text" id="deleteAnnouncementId" name="id" required>
+            <button type="submit">Удалить объявление</button>
+        </form> -->
+    </main>
+    <script src="TheSmurfs.js"></script>
+</body>
+</html>

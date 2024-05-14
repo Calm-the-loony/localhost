@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( to right, #ffffff, #3D689C);
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(153, 143, 242, 0.1);
+    margin-top: 100px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.news-list {
+    margin-top: 20px;
+}
+
+.news-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 0;
+}
+
